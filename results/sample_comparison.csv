@@ -1,0 +1,5 @@
+prefix,order,seed,tree,nodes,height,height_balanced,mean_leaf_depth
+(all),sorted,42,BST,98,97,False,97.0
+(all),sorted,42,RBT,98,10,False,6.020408
+(all),shuffled,42,BST,98,11,False,7.647059
+(all),shuffled,42,RBT,98,7,False,5.840909
