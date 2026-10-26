@@ -5,6 +5,15 @@ same words in sorted and shuffled insertion orders. Both structures implement
 insertion, lookup, deletion and traversal directly. The experiment shows how
 insertion order affects tree shape and how rotations limit height growth.
 
+![Actual binary search tree and red-black tree after inserting the sorted keys 1–10, with heights 9 and 4 on the same depth scale](docs/images/tree-comparison.png)
+
+The same ten sorted keys produce a chain in the BST and a shorter red-black
+tree. Node positions, edges and colours come from the actual implementations;
+NIL leaves are omitted. This small illustration is separate from the 98-word
+experiment below.
+
+**Python · data structures · rotations · invariant testing · reproducible experiments**
+
 ## Run
 
 Python 3.12; tested with 3.12.14. Only the standard library is required.
@@ -29,6 +38,17 @@ stored words keep their spelling. The loader removes identical duplicates and
 accepts unsorted input. Both trees receive the same selected order, with at most
 three prefixes and **400 words per prefix**. The original course dictionary is
 not included; the small fixture is sufficient for the examples.
+
+To regenerate the illustration, install the optional plotting dependency and
+run the preview script synchronised from the project collection:
+
+```bash
+python -m pip install -r requirements-visualisation.txt
+python preview.py
+```
+
+This writes `docs/images/tree-comparison.png`. Plotting is optional; the tree
+implementations, comparison command and tests require only the standard library.
 
 ## Results and definitions
 
