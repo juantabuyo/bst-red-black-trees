@@ -18,3 +18,9 @@ not meet this stricter height-balance condition.
 Recursive degenerate BSTs can exceed Python's recursion limit. Copying longest
 paths and using a list as a queue can have quadratic costs. The fixture comparison
 is structural, not a large-dictionary or runtime benchmark.
+
+## Earlier corrections
+
+The current implementation includes post-submission corrections to sentinel
+handling and successor colours during deletion, unique-key behaviour and
+empty-tree metrics. The comparison calls these coursework implementations.
